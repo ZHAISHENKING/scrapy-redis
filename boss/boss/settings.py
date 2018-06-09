@@ -58,7 +58,7 @@ CONCURRENT_REQUESTS = 1
 DOWNLOADER_MIDDLEWARES = {
    'boss.middlewares.BossDownloaderMiddleware': 543,
    'boss.middlewares.RandomUserAgentMiddleware': 125,
-   'boss.middlewares.RandomProxyMiddleware': 345
+   # 'boss.middlewares.RandomProxyMiddleware': 345
 }
 
 # Enable or disable extensions
@@ -94,12 +94,8 @@ ITEM_PIPELINES = {
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-REDIS_HOST = 'localhost'
-REDIS_PORT = 6379
-# REDIS_URL = 'redis://127.0.0.1:6379'
+# REDIS_HOST = 'localhost'
+# REDIS_PORT = 6379
+REDIS_URL = 'redis://47.104.229.81:6379'
 
-RANDOM_UA_TYPE= 'random'
-
-DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
-SCHEDULER = "scrapy_redis.scheduler.Scheduler"
-SCHEDULER_PERSIST = True
+# RANDOM_UA_TYPE= 'random'
