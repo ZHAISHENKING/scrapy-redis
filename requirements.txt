@@ -59,7 +59,7 @@ tornado==4.5.3
 Twisted==18.4.0
 tzlocal==1.5.1
 u-msgpack-python==2.5.0
-urllib3==1.22
+urllib3==1.26.5
 w3lib==1.19.0
 Werkzeug==0.11.15
 WsgiDAV==2.4.0
